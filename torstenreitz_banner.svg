@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="360" viewBox="0 0 1920 360" role="img" aria-label="Torsten Reitz banner">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4e73df"/>
+      <stop offset="100%" stop-color="#2e59d9"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="soft"/>
+      <feBlend in="SourceGraphic" in2="soft" mode="normal"/>
+    </filter>
+    <style><![CDATA[
+      .title{font:700 42px 'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif;fill:#ffffff}
+      .sub{font:500 18px 'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif;fill:#e6ecff}
+      .pill{fill:#ffffff22;stroke:#ffffff44;stroke-width:1.2}
+      .pilltext{font:600 14px 'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif;fill:#ffffff}
+    ]]></style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <!-- wave -->
+  <path d="M0,250 C320,320 640,220 960,280 C1280,340 1600,240 1920,300 L1920,360 L0,360 Z" fill="#ffffff12" filter="url(#soft)"/>
+  <path d="M0,230 C320,300 640,200 960,260 C1280,320 1600,220 1920,280 L1920,360 L0,360 Z" fill="#00000010"/>
+
+  <!-- Title block -->
+  <g transform="translate(120,120)">
+    <text class="title">Torsten Reitz</text>
+    <text class="sub" y="34" dy="24">Building Bitcoin intelligence @ Scout Bitcoin · CMO · Web3 & DeFi · Photographer/Writer · Java / C#</text>
+
+    <!-- pills -->
+    <g transform="translate(0,96)">
+      <rect class="pill" x="0" y="-18" rx="12" ry="12" width="190" height="36"/>
+      <text class="pilltext" x="16" y="0" dominant-baseline="middle">Web3 Marketing</text>
+
+      <rect class="pill" x="206" y="-18" rx="12" ry="12" width="148" height="36"/>
+      <text class="pilltext" x="222" y="0" dominant-baseline="middle">DeFi Strategy</text>
+
+      <rect class="pill" x="370" y="-18" rx="12" ry="12" width="146" height="36"/>
+      <text class="pilltext" x="386" y="0" dominant-baseline="middle">Java / C# Dev</text>
+
+      <rect class="pill" x="532" y="-18" rx="12" ry="12" width="172" height="36"/>
+      <text class="pilltext" x="548" y="0" dominant-baseline="middle">Photography</text>
+    </g>
+  </g>
+</svg>
