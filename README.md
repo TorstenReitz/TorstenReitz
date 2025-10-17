@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="./torstenreitz_banner.svg" alt="Torsten Reitz banner" width="100%" />
+  <img src="./torstenreitz_banner.svg?raw=1" alt="Torsten Reitz banner" width="100%" />
 </p>
 
 <!-- Hero -->
